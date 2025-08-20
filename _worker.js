@@ -1435,7 +1435,7 @@ function 配置信息(UUID, 域名地址) {
     const 指纹 = 'randomized';
 
     if (域名地址.includes('.workers.dev')) {
-        地址 = atob('dmlzYS5jbg==');
+        地址 = atob('dmlzYS5jb20uaGs=');
         端口 = 80;
         传输层安全 = ['', false];
     }
@@ -2084,7 +2084,7 @@ function 生成本地订阅(host, UUID, noTLS, newAddressesapi, newAddressescsv,
 async function 整理(内容) {
     // 将制表符、双引号、单引号和换行符都替换为逗号
     // 然后将连续的多个逗号替换为单个逗号
-    var 替换后的内容 = 内容.replace(/[	|"'\r\n]+/g, ',').replace(/,+/g, ',');
+    var 替换后的内容 = 内容.replace(/[	"'\r\n]+/g, ',').replace(/,+/g, ',');
 
     // 删除开头和结尾的逗号（如果有的话）
     if (替换后的内容.charAt(0) == ',') 替换后的内容 = 替换后的内容.slice(1);
